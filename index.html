@@ -6,21 +6,21 @@
 <title>Ankita Sharma — Physics Tutoring</title>
 <meta name="description" content="Ankita Sharma: Concept-first physics tutoring for national and international boards (CBSE, ISC, IB, IGCSE). Online lessons for students in India, UK, Netherlands, Singapore." />
 <style>
-  /* Copilot-like background: subtle deep-blue gradient, readable on light cards */
+  /* Soothing cream background, dark cards and readable text */
   :root{
     --accent:#0b74de;
-    --bg-gradient-1:#071020;
-    --bg-gradient-2:#0b1b33;
-    --card:#0f1724; /* dark card to contrast with gradient */
-    --card-alt:#0b1220;
-    --muted:#cbd5e1;
-    --text:#e6eef8;
+    --bg-cream:#FBF5EA; /* main page background */
+    --card:#ffffff;     /* card background */
+    --card-border:#e6dfd1;
+    --muted:#5b6368;
+    --text:#0f1724;
+    --shadow: 0 6px 20px rgba(15,23,36,0.06);
   }
 
   html,body{height:100%;margin:0}
   body{
     font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    background:linear-gradient(180deg,var(--bg-gradient-1) 0%, var(--bg-gradient-2) 100%);
+    background:var(--bg-cream);
     color:var(--text);
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
@@ -30,10 +30,10 @@
   header{display:flex;align-items:center;justify-content:space-between;gap:12px}
   .brand{font-weight:700;color:var(--accent)}
   .hero{
-    background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
     padding:28px;border-radius:12px;display:flex;flex-wrap:wrap;gap:18px;
-    box-shadow:0 8px 30px rgba(2,6,23,0.6);
-    border:1px solid rgba(255,255,255,0.03);
+    box-shadow:var(--shadow);
+    border:1px solid var(--card-border);
   }
   .hero-left{flex:1 1 320px}
   h1{margin:0 0 8px;font-size:1.6rem;color:var(--text)}
@@ -41,16 +41,16 @@
   .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block}
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px}
   .card{
-    background:linear-gradient(180deg,var(--card) 0%, var(--card-alt) 100%);
+    background:var(--card);
     padding:14px;border-radius:10px;
-    box-shadow:0 6px 18px rgba(2,6,23,0.6);
-    border:1px solid rgba(255,255,255,0.02);
+    box-shadow:var(--shadow);
+    border:1px solid var(--card-border);
     color:var(--muted);
   }
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
   footer{margin-top:22px;padding:16px 0;color:var(--muted);font-size:0.9rem;text-align:center}
   @media(max-width:640px){.two-col{grid-template-columns:1fr}}
-  form input,form textarea{width:100%;padding:8px;border:1px solid rgba(255,255,255,0.06);border-radius:8px;background:rgba(255,255,255,0.02);color:var(--text);margin-top:8px}
+  form input,form textarea{width:100%;padding:10px;border:1px solid var(--card-border);border-radius:8px;background:transparent;color:var(--text);margin-top:8px}
   form button{margin-top:8px;background:var(--accent);color:white;padding:10px 12px;border-radius:8px;border:none}
   ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
   a {color:var(--accent)}
@@ -61,22 +61,3 @@
 <div class="wrap">
   <header>
     <div class="brand">PhysicsTutor • Ankita Sharma</div>
-    <nav><a class="btn" href="#contact">Book Free Trial</a></nav>
-  </header>
-
-  <section class="hero" id="home">
-    <div class="hero-left">
-      <h1>Physics Made Clear</h1>
-      <p class="lead">Concept-first lessons for Class 9–12, JEE, NEET, and international curricula. I teach for national boards (CBSE, ISC) and international boards (IB, IGCSE) with students worldwide.</p>
-      <p class="muted-small"><strong>Trial:</strong> 30-minute free session • <strong>Price:</strong> ₹750–₹1,000/hr</p>
-      <a class="btn" href="#contact">Book Free Trial</a>
-      <div style="margin-top:12px;color:var(--muted)">Platforms: Zoom, Google Meet • Languages: English, Hindi</div>
-    </div>
-    <div style="flex:0 1 240px">
-      <div class="card">
-        <strong style="color:var(--text)">What I teach</strong>
-        <ul>
-          <li>Mechanics & Vectors</li>
-          <li>Electrodynamics & Magnetism</li>
-          <li>Optics, Thermodynamics, Modern Physics</li>
-        </ul>
