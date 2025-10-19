@@ -4,13 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Ankita Sharma — Physics Tutoring</title>
-<meta name="description" content="Ankita Sharma: Concept-first physics tutoring for national and international boards (CBSE, ISC, IB, IGCSE). Online lessons for students in India, UK, Netherlands, Singapore." />
+<meta name="description" content="Ankita Sharma: Master of Science in Physics offering concept-first tutoring for classes 6–12 and international boards (CBSE, ISC, IB, IGCSE). Students in India, UK, Netherlands, Singapore." />
 <style>
-  /* Soothing cream background, dark cards and readable text */
+  /* Soothing cream background, clear readable typography */
   :root{
     --accent:#0b74de;
-    --bg-cream:#FBF5EA; /* main page background */
-    --card:#ffffff;     /* card background */
+    --bg-cream:#FBF5EA;
+    --card:#ffffff;
     --card-border:#e6dfd1;
     --muted:#5b6368;
     --text:#0f1724;
@@ -28,7 +28,8 @@
 
   .wrap{max-width:980px;margin:28px auto;padding:22px}
   header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .brand{font-weight:700;color:var(--accent)}
+  .brand{font-weight:800;color:var(--accent);font-size:1.15rem}
+  .name-large{font-weight:900;font-size:1.5rem;color:var(--text);letter-spacing:0.2px}
   .hero{
     background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
     padding:28px;border-radius:12px;display:flex;flex-wrap:wrap;gap:18px;
@@ -55,9 +56,91 @@
   ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
   a {color:var(--accent)}
   .muted-small{color:var(--muted);font-size:0.95rem}
+  .meta{color:var(--muted);margin-top:6px}
+  .qual{margin-top:8px;color:var(--text);font-weight:600}
+  .contact-line{margin-top:10px;color:var(--muted)}
+  .testimonial-quote{color:var(--muted);margin-top:6px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="brand">PhysicsTutor • Ankita Sharma</div>
+    <div>
+      <div class="brand">PhysicsTutor</div>
+      <div class="name-large">Ankita Sharma</div>
+    </div>
+    <nav><a class="btn" href="#contact">Book Free Trial</a></nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <h1>Physics Made Clear</h1>
+      <p class="lead">Concept-first lessons for classes 6–12, JEE, NEET, and international curricula. I teach for national boards (CBSE, ISC) and international boards (IB, IGCSE) and work with students worldwide.</p>
+      <div class="qual">Master of Science in Physics · Teaching classes 6–12</div>
+      <p class="muted-small"><strong>Trial:</strong> 30-minute free session • <strong>Price:</strong> ₹750–₹1,000/hr</p>
+      <a class="btn" href="#contact">Book Free Trial</a>
+      <div class="meta">Platforms: Zoom, Google Meet • Languages: English, Hindi</div>
+      <div class="contact-line">Email: <strong>ankitasharma31295@gmail.com</strong></div>
+    </div>
+    <div style="flex:0 1 240px">
+      <div class="card">
+        <strong style="color:var(--text)">What I teach</strong>
+        <ul>
+          <li>Mechanics & Vectors</li>
+          <li>Electrodynamics & Magnetism</li>
+          <li>Optics, Thermodynamics, Modern Physics</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <strong style="color:var(--text)">Global Students</strong>
+        <p style="margin:8px 0;color:var(--muted)">Currently teaching students in <strong>UK, Netherlands, Singapore</strong> and India, with tailored lesson plans for board and international exam formats.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top:18px">
+    <h2 style="color:var(--text)">Courses & Pricing</h2>
+    <div class="cards">
+      <div class="card"><strong style="color:var(--text)">One-on-One</strong><div style="margin-top:6px">Personalized lessons • ₹750–₹1,000/hr</div></div>
+      <div class="card"><strong style="color:var(--text)">Crash Course</strong><div style="margin-top:6px">Topic bundles for JEE/NEET/Board exams • Package pricing available</div></div>
+      <div class="card"><strong style="color:var(--text)">International Boards</strong><div style="margin-top:6px">IB/IGCSE focused modules; concept-to-assessment coaching</div></div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <h3 style="color:var(--text)">Teaching Approach</h3>
+        <ul>
+          <li>Concept maps followed by problem-solving</li>
+          <li>Live solved examples and timed practice tests</li>
+          <li>Recorded lessons, weekly quizzes, and doubt-clearing sessions</li>
+        </ul>
+      </div>
+
+      <div class="card" id="testimonials">
+        <h3 style="color:var(--text)">Testimonials</h3>
+        <p><strong style="color:var(--text)">Anushka:</strong> <span class="testimonial-quote">"Ankita's approach clarified concepts I'd struggled with for months. My test scores improved dramatically."</span></p>
+        <p><strong style="color:var(--text)">Bella:</strong> <span class="testimonial-quote">"Clear explanations and practical tricks for problem-solving — helped me perform confidently in my IB exams."</span></p>
+        <p><strong style="color:var(--text)">Keshav:</strong> <span class="testimonial-quote">"Personalized sessions and regular practice made a big difference. Highly recommended."</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top:18px" id="contact">
+    <h2 style="color:var(--text)">Contact / Book Trial</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label style="color:var(--muted)">Name</label><input name="name" required />
+      <label style="color:var(--muted)">Class / Exam</label><input name="class" required />
+      <label style="color:var(--muted)">Phone or Email</label><input name="contact" required />
+      <label style="color:var(--muted)">Preferred days/times</label><input name="time" />
+      <label style="color:var(--muted)">Message</label><textarea name="message" rows="4"></textarea>
+      <button type="submit">Request Free Trial</button>
+    </form>
+    <p style="margin-top:10px;color:var(--muted)">Or WhatsApp: <strong>+91-XXXXXXXXXX</strong> • Email: <strong>ankitasharma31295@gmail.com</strong></p>
+  </section>
+
+  <footer>© <span id="yr"></span> Ankita Sharma — Physics Tutor</footer>
+</div>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
